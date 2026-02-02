@@ -328,7 +328,7 @@ document.addEventListener('keydown', (e) => {
 });
 
 // --- Discord Webhook Integration ---
-const DISCORD_WEBHOOK_URL = 'https://discordapp.com/api/webhooks/1467879855881457739/aw9eKIq_Xn93EFCctcup9YDQ_45D6016GXHvMvE6vsAc8pohVur2pYRxTzEkemioIF_N'; // User needs to replace this
+const DISCORD_WEBHOOK_URL = 'https://discordapp.com/api/webhooks/1467884790391771412/AkvJzrkMFMhkFrKgagKjqHimS0tQcuqt_KCnMImKfIzKibeCBmr0z_XEOJQepODbHpgU'; 
 
 const contactForm = document.getElementById('contact-form');
 const submitBtn = document.getElementById('form-submit');
