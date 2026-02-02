@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godswish Innocent | Creative Visual Designer</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Godswish Innocent is a creative visual designer, strategist, and storyteller specializing in brand identity and motion design.">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GSAP for Professional Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="logo font-serif">GI.</a>
+            
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#work" class="nav-link">Work</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#contact" class="nav-btn">Hire Me</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="menu-btn">
+                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#work" class="mobile-nav-link">Work</a>
+            <a href="#services" class="mobile-nav-link">Services</a>
+            <a href="#contact" class="mobile-nav-link" style="color: var(--straw);">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-bg-1 animate-float"></div>
+        <div class="hero-bg-2 animate-float-delayed"></div>
+
+        <div class="container hero-content">
+            <p class="text-straw uppercase tracking-widest reveal-up delay-100">Based in Nigeria 🇳🇬</p>
+            <h1 class="font-serif font-medium reveal-up delay-200">
+                Godswish <br>
+                <span class="italic font-light text-gray">Innocent</span>
+            </h1>
+            <p class="hero-subtitle reveal-up delay-300">
+                Visual Designer. Strategist. Storyteller.
+                <span class="hero-tagline">Specializing in Brand Identity & Motion Design</span>
+            </p>
+            <div class="btn-group reveal-up delay-400">
+                <a href="#work" class="btn btn-primary">View Work</a>
+                <a href="#contact" class="btn btn-outline">Hire Me</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="bg-light">
+        <div class="container">
+            <div class="grid-2">
+                <div class="reveal-up">
+                    <h2 class="section-title text-straw">Crafting Visual <br> Identities.</h2>
+                    <p class="text-gray" style="margin-bottom: 1.5rem;">
+                        I am a creative visual designer with over 5 years of experience. Based in Nigeria, I bridge the gap between aesthetic beauty and strategic communication.
+                    </p>
+                    <p class="text-gray" style="margin-bottom: 2rem;">
+                        Currently driving creative vision at <span class="text-white">Code Ambassadors</span>, I've had the privilege of designing solutions for ed-tech platforms, high-profile industry events, and diverse real-life businesses across the region.
+                    </p>
+                    
+                    <!-- Skills -->
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <h3 class="font-serif">Visual Identity</h3>
+                            <p>Logo, brand guidelines, tone of voice</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3 class="font-serif">Graphic Design</h3>
+                            <p>Print, packaging, campaigns</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3 class="font-serif">Illustration</h3>
+                            <p>Digital art, custom assets</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3 class="font-serif">Motion Design</h3>
+                            <p>2D animation, motion graphics</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="img-frame reveal-up delay-200">
+                    <div class="img-container">
+                        <img src="./images/Profile Pic.jpg" alt="Godswish Innocent Abstract Art">
+                        <div class="img-overlay">
+                            <div>
+                                <span class="text-straw font-serif italic" style="font-size: 1.5rem; display: block;">5+ Years</span>
+                                <span class="text-white uppercase tracking-widest" style="font-size: 0.75rem;">Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="decoration-line decoration-top-left"></div>
+                    <div class="decoration-line decoration-bottom-right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work">
+        <div class="container">
+            <div class="portfolio-header reveal-up">
+                <h2 class="section-title">Selected Works</h2>
+                <a href="#" class="text-straw uppercase tracking-widest font-bold" style="font-size: 0.75rem; text-decoration: none;">View all &rarr;</a>
+            </div>
+
+            <div class="grid-3">
+                <!-- Project 1 -->
+                <div class="project-card reveal-up" onclick="openModal('project1')">
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1626785774573-4b799314346d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="EdTech Brand Identity">
+                        <div class="img-overlay">
+                            <span class="text-white uppercase tracking-widest" style="font-size: 0.75rem; border-bottom: 1px solid var(--straw); padding-bottom: 0.25rem;">View Case Study</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title font-serif">EdTech Platform</h3>
+                    <p class="project-category">Visual Identity • UI Design</p>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal-up delay-100" onclick="openModal('project2')">
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Corporate Event Design">
+                        <div class="img-overlay">
+                            <span class="text-white uppercase tracking-widest" style="font-size: 0.75rem; border-bottom: 1px solid var(--straw); padding-bottom: 0.25rem;">View Case Study</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title font-serif">Tech Summit 2023</h3>
+                    <p class="project-category">Event Design • Print Materials</p>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal-up delay-200" onclick="openModal('project3')">
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Packaging Design">
+                        <div class="img-overlay">
+                            <span class="text-white uppercase tracking-widest" style="font-size: 0.75rem; border-bottom: 1px solid var(--straw); padding-bottom: 0.25rem;">View Case Study</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title font-serif">Ope Arts Line</h3>
+                    <p class="project-category">Packaging • Illustration</p>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card reveal-up" onclick="openModal('project4')">
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Motion Design">
+                        <div class="img-overlay">
+                            <span class="text-white uppercase tracking-widest" style="font-size: 0.75rem; border-bottom: 1px solid var(--straw); padding-bottom: 0.25rem;">View Case Study</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title font-serif">Nexus Brand Motion</h3>
+                    <p class="project-category">Motion Graphics • Video</p>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card reveal-up delay-100" onclick="openModal('project5')">
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1558655146-d09347e0b7a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Social Media Campaign">
+                        <div class="img-overlay">
+                            <span class="text-white uppercase tracking-widest" style="font-size: 0.75rem; border-bottom: 1px solid var(--straw); padding-bottom: 0.25rem;">View Case Study</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title font-serif">AfroFuture Arts</h3>
+                    <p class="project-category">Social Media • Branding</p>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card reveal-up delay-200" onclick="openModal('project6')">
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Editorial Design">
+                        <div class="img-overlay">
+                            <span class="text-white uppercase tracking-widest" style="font-size: 0.75rem; border-bottom: 1px solid var(--straw); padding-bottom: 0.25rem;">View Case Study</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title font-serif">Lagos Fashion Week</h3>
+                    <p class="project-category">Editorial • Lookbook</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-light" style="border-top: 1px solid var(--white-5);">
+        <div class="container">
+            <h2 class="section-title reveal-up" style="text-align: center; margin-bottom: 5rem;">Services I Offer</h2>
+            
+            <div class="services-grid">
+                <div class="service-card reveal-up">
+                    <div class="service-icon">
+                        <svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg>
+                    </div>
+                    <h3>Graphic Design</h3>
+                    <p>Comprehensive design solutions for print and digital media to elevate your brand presence.</p>
+                </div>
+
+                <div class="service-card reveal-up delay-100">
+                    <div class="service-icon">
+                        <svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                    </div>
+                    <h3>Visual Identity</h3>
+                    <p>Crafting unique brand personalities, from logos to comprehensive style guides.</p>
+                </div>
+
+                <div class="service-card reveal-up delay-200">
+                    <div class="service-icon">
+                        <svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3>Motion Design</h3>
+                    <p>Engaging animated content, logo animations, and social media videos.</p>
+                </div>
+
+                <div class="service-card reveal-up delay-300">
+                    <div class="service-icon">
+                        <svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3>Illustration</h3>
+                    <p>Custom digital and handcrafted illustrations to add a personal touch to your projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="overflow: hidden; position: relative;">
+        <!-- Decoration Area -->
+        <div style="position: absolute; top: 0; right: 0; width: 24rem; height: 24rem; background: rgba(212, 180, 131, 0.05); border-radius: 50%; filter: blur(120px); pointer-events: none;"></div>
+
+        <div class="container">
+            <div class="contact-grid">
+                <div class="reveal-up">
+                    <h2 class="section-title">Let's create something <span class="text-straw italic">bold</span>.</h2>
+                    <p class="text-gray" style="font-size: 1.125rem; margin-bottom: 2.5rem; max-width: 25rem;">
+                        Available for freelance projects and creative collaborations.
+                    </p>
+                    
+                    <div class="contact-info">
+                        <a href="mailto:hello@godswishinnocent.com" class="contact-link">
+                            <span class="contact-icon">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            </span>
+                            <span style="font-size: 1.25rem;">godswishly@gmail.com </span>
+                        </a>
+                        
+                        <a href="https://wa.me/2348000000000" target="_blank" class="contact-link whatsapp">
+                            <span class="contact-icon">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                            </span>
+                            <span style="font-size: 1.25rem;">WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="reveal-up delay-200">
+                    <div class="form-container">
+                        <form onsubmit="event.preventDefault(); alert('Thank you for your message! This is a demo form.');">
+                            <div class="form-group">
+                                <label class="form-label">Name</label>
+                                <input type="text" class="form-input" placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-input" placeholder="your@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Message</label>
+                                <textarea rows="4" class="form-input" style="resize: none;" placeholder="Tell me about your project..."></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p class="footer-text">© 2026 Godswish Innocent. All Rights Reserved.</p>
+            <div class="social-links">
+                <a target="_blank" href="https://x.com/wish_sensei" class="social-link">X</a>
+                <a target="_blank" href="https://dribbble.com/Visual_sensei" class="social-link">Dribbble</a>
+                <a target="_blank" href="https://www.linkedin.com/in/godswish-innocent-372710313?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal Overlay -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <!-- Close Button -->
+            <button onclick="closeModal()" class="modal-close">
+                <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+
+            <!-- Dynamic Content injected via JS -->
+            <div id="modal-content-body">
+                <!-- Content will be replaced here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
