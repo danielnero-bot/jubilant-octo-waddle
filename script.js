@@ -326,3 +326,61 @@ document.addEventListener('keydown', (e) => {
         closeProject();
     }
 });
+
+// --- Discord Webhook Integration ---
+const DISCORD_WEBHOOK_URL = 'YOUR_DISCORD_WEBHOOK_URL_HEREhttps://discordapp.com/api/webhooks/1467879855881457739/aw9eKIq_Xn93EFCctcup9YDQ_45D6016GXHvMvE6vsAc8pohVur2pYRxTzEkemioIF_N'; // User needs to replace this
+
+const contactForm = document.getElementById('contact-form');
+const submitBtn = document.getElementById('form-submit');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        const name = document.getElementById('form-name').value;
+        const email = document.getElementById('form-email').value;
+        const message = document.getElementById('form-message').value;
+        
+        // Disable button and show loading state
+        const originalText = submitBtn.innerHTML;
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span>Sending...</span>';
+        
+        const payload = {
+            embeds: [
+                {
+                    title: 'New Contact Form Submission',
+                    color: 13939843, // Decimal for #d4b483 (Straw color)
+                    fields: [
+                        { name: 'Name', value: name, inline: true },
+                        { name: 'Email', value: email, inline: true },
+                        { name: 'Message', value: message }
+                    ],
+                    footer: { text: 'Godswish Innocent Portfolio' },
+                    timestamp: new Date().toISOString()
+                }
+            ]
+        };
+        
+        try {
+            const response = await fetch(DISCORD_WEBHOOK_URL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+            
+            if (response.ok) {
+                alert('Message sent successfully!');
+                contactForm.reset();
+            } else {
+                throw new Error('Failed to send message');
+            }
+        } catch (error) {
+            console.error('Submission error:', error);
+            alert('Something went wrong. Please try again or reach out directly.');
+        } finally {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalText;
+        }
+    });
+}
